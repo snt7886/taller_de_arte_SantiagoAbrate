@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Taller de Eugenia</title>
+        <!-- link al css-->
+        <link rel="stylesheet" href="../css/style.css">
+        <!-- link al font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&display=swap" rel="stylesheet"> 
+        <!-- link a aos-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- link a animate.style css-->
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+        <!-- link a Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
+    </head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand d-flex justify-content-start" href="../index.html">
+                <img class="rounded-circle" src="../imagenes/logo.jpg" alt="" width="45" height="36" class="d-inline-block align-text-top">
+               <h1 class="animate__animated animate__fadeIn ps-3 pt-1">Taller de Eugenia</h1>
+              </a>
+            </div>
+            <div class="container-fluid nav_fonts">
+                <a class="navbar-brand text-light" href="../index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active text-light" aria-current="page" href="../pages/tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-light" aria-current="page" href="../pages/curso.html">Curso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="../pages/bio.html">Biografia</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success text-light" type="submit">Search</button>
+                  </form>
+                </div>
+            </div>            
+          </nav>                     
+    </header>
+    <!-- fin del header-->
+
+    <!-- main -->
+    <main class="contacto_main">
+    <!-- formulario -->    
+      <form class="formulario">
+        <div class="form_contenedor">
+          <h2 class="form_titulo">Contáctanos</h2>
+          <input type="text" class="form_input" placeholder="Nombre:">
+          <input type="email" class="form_input" placeholder="Email:">
+          <textarea class="form_input mensaje" placeholder="Mensaje:"></textarea>
+          <input type="submit" value="Enviar" class="form_enviar">
+        </div>
+      </form>
+    </main>
+    <!-- fin del main -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer_direccion">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.809306997789!2d-64.17191508535585!3d-31.419379603539568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2a2c8c1fb27%3A0xeb4280fd69222235!2sPje.%20Laurencena%20985%2C%20X5004%20GVA%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1655756336637!5m2!1ses-419!2sar" width="125" height="125" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             <figcaption class="direccion_text">Nuestro taller</figcaption>
+        </div> 
+        <div class="footer_redes">
+             <ul class="redes_list">
+                 <li><img src="../imagenes/facebook.svg" alt="facebook" class="redes_img"><a href="https://es-la.facebook.com/" target="_blank" class="redes_text">Facebook</a></li>
+                 <li><img src="../imagenes/instagram.svg" alt="instagram" class="redes_img"><a href="https://www.instagram.com/" target="_blank" class="redes_text">Instagram</a></li>
+             </ul>
+        </div>
+        <div class="footer_contacto">
+             <ul class="contacto_list">
+                 <li><img src="../imagenes/email.svg" alt="email" class="contacto_img"><a href="https://gmail.com" target="_blank" class="contacto_text">*****@***.com</a></li>
+                 <li><img src="../imagenes/whatsapp.svg" alt="whatsapp" class="contacto_img"><a href="https://www.whatsapp.com/" target="_blank" class="contacto_text">351******</a></li>
+                 <li><img src="../imagenes/maps.svg" alt="contacto" class="contacto_img"><a href="../pages/contacto.html" target="_blank" class="contacto_text">Contacto</a></li>
+             </ul>
+        </div>
+     </footer>
+     <!-- fin del footer -->
+    <!-- fin de contacto.html -->
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
+</body>
+</html>

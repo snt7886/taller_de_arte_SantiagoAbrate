@@ -1,0 +1,52 @@
+@import "../base/listas";
+@import "../base/variables";
+@import "../base/extends";
+@import "../base/mapas";
+@import "../base/mixins";
+
+/**header**/
+#header {
+    width: map-get($w-h_lg, w);
+    background: nth($bg-c-h, 1); 
+    height: map-get($w-h_lg, h);
+    padding-top: nth($pad-marg, 1);
+    padding-bottom: nth($pad-marg, 1);
+    border-bottom: nth($border, 1);
+    animation: cambioHeader 10s ease infinite;
+
+    @keyframes cambioHeader {
+        0%{background-color: nth($bg-c-h, 1);}
+        20%{background-color: nth($bg-c-h, 2);}
+        40%{background-color: nth($bg-c-h, 3);}
+        60%{background-color: nth($bg-c-h, 4);}
+        80%{background-color: nth($bg-c-h, 5);}
+    } 
+    @media only screen and (max-width: 480px) {
+        width: map-get($w-h_sm, w);
+        height: map-get($w-h_sm, h);
+        position: sticky;
+        top: 0;
+        grid-template-areas: "title title title title"
+        "buttons buttons buttons buttons"
+        "nav nav nav nav";
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .navbar {
+        
+        .nav_fonts {
+            /**barra de menu**/
+            font-family: $font-fam; 
+            font-style: $font-stl;
+        }
+        .container-fluid .navbar-brand .animate__animated {
+            /**encabezado**/
+            text-decoration: none; 
+            color: nth($color, 1); 
+            font-family: $font-fam; 
+            font-style: $font-stl;
+            font-size: nth($font-size, 2);
+        }
+    }
+}
+
+/**fin del header**/

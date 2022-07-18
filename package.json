@@ -1,0 +1,19 @@
+{
+  "name": "taller_de_arte_santiago_abrate---copia---copia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snt7886/taller-de-arte-santiago-abrate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snt7886/taller-de-arte-santiago-abrate/issues"
+  },
+  "homepage": "https://github.com/snt7886/taller-de-arte-santiago-abrate#readme",
+  "description": ""
+}

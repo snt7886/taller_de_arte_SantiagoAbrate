@@ -1,0 +1,39 @@
+@import "../base/listas";
+@import "../base/variables";
+@import "../base/mapas";
+@import "../base/extends";
+@import "../base/mixins";
+/**seccion de porcelanas**/
+#porce_section {
+    margin-top: nth($pad-marg, 1);
+    .container .row .cero .porce_cero {
+        display: flex;
+        justify-content: center;
+        margin-top: nth($pad-marg, 2);
+        width: nth($width, 3);
+        .porce_title {
+            @extend %title-sections;
+            &:hover {
+                animation: cambioTitles 5s ease infinite;
+                color: nth($color, 2);
+                transform: skew(10deg, 1deg);
+                transition: all 0.5s;
+                @keyframes cambioTitles {
+                    0%{color: nth($color, 2);}
+                    33% {color: nth($color, 3);}
+                    66% {color: nth($color, 4);}
+                }  
+            }
+
+        }
+    }
+    .container .row div[ class~="col-lg-3"] div[ class] {
+        border: nth($border, 1);
+        .porce_img {
+            height: nth($height, 5);
+            width: nth($width, 4);
+            border-radius: nth($border-r, 1);
+            border: nth($border, 2);
+        }
+    }   
+}

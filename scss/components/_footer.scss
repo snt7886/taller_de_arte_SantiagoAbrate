@@ -1,0 +1,102 @@
+@import "../base/listas";
+@import "../base/variables";
+@import "../base/mapas";
+@import "../base/extends";
+@import "../base/mixins";
+/**footer**/
+#footer {
+    background-color: nth($bg-c-f, 1); 
+    width: nth($width, 3); 
+    height: nth($height, 4);
+    padding-top: nth($pad-marg, 1);
+    border-top: nth($border, 1);
+    display: grid;
+    grid-template-areas: "direccion redes contacto";
+    grid-template-columns: repeat(3, 1fr);
+    animation: cambioFooter 10s ease infinite;
+    @keyframes cambioFooter {
+        0%{background-color: nth($bg-c-f, 1);}
+        20%{background-color: nth($bg-c-f, 2);}
+        40%{background-color: nth($bg-c-f, 3);}
+        60%{background-color: nth($bg-c-f, 2);}
+        80%{background-color: nth($bg-c-f, 1);}
+    } 
+    .footer_direccion {
+        grid-area: direccion;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .mapafooter {
+            &:hover {
+                transform: scale(1.20, 1);
+                transition: all ease 0.3s;
+            }
+        }
+        .direccion_text {
+            text-decoration: none; 
+            color: nth($color, 1); 
+            font-family: $font-fam; 
+            font-size: nth($font-size, 1);
+        }
+    }
+    .footer_redes {
+        grid-area: redes;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .redes_list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            .redes_img {
+                height: nth($height, 1);
+                width: nth($width, 2);
+                background-color: $c-redes;
+                border-radius: nth($border-r, 2);
+                border: nth($border, 1);
+            }
+            .redes_text {
+                text-decoration: none; 
+                color: nth($color, 1); 
+                font-family: $font-fam; 
+                font-size: nth($font-size, 1);
+                position: absolute;
+                &:hover {
+                    color: $c-redes;
+                    @extend %footer_hover;
+                }
+            }
+        }
+    }
+    .footer_contacto {
+        grid-area: contacto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .contacto_list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            .contacto_img {
+                height:nth($height, 1);
+                width: nth($width, 2);
+                background-color: $c-contacto;
+                border-radius: nth($border-r, 2);
+                border: nth($border, 1);
+            }
+            .contacto_text {
+                text-decoration: none; 
+                color: nth($color, 1); 
+                font-family: $font-fam; 
+                font-size: nth($font-size, 1); 
+                position: absolute;
+                &:hover {
+                    color: $c-contacto;
+                    @extend %footer_hover;
+                }
+            }
+        }
+    }
+}

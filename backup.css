@@ -1,0 +1,636 @@
+* {
+    margin: 0;
+	padding: 0;
+}
+
+@media only screen and (min-width: 481px) {
+    .menu_bar_a:hover {  
+        color: cyan;
+        font-size: 25px;
+        font-stretch: expanded;
+        transition: all 0.5s;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+    /*header*/
+    #header {
+        width: 100%;
+        height: 15vh;
+        position: sticky;
+        top: 0;
+        grid-template-areas: "title title title title"
+        "buttons buttons buttons buttons"
+        "nav nav nav nav";
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .logo {
+        display: none;
+    }
+    .title {
+        width: 100%;
+    }
+    nav {
+        margin-top: 6px;
+    }
+    .menu_bar_a:hover { 
+        color: cyan;
+    }
+    #main {
+        width: 100%;
+    }
+}
+
+
+
+/**body**/
+body {
+	margin: 0;
+	padding: 0;
+    font-family: 'Brygada 1918', serif; 
+    width: 100%;
+}
+/**header**/
+#header {
+    /* Aqui agregué gradientes para el color del header de una pagina CSS Gradient*/
+    width: 100%;
+    background: rgb(106,0,252); 
+    height: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    animation: cambioHeader 10s ease infinite;
+}
+
+/**encabezado**/
+.animate__animated {        
+    text-decoration: none; 
+    color: lavender; 
+    font-family: 'Brygada 1918', serif; 
+    font-style: italic;
+    font-size: 20px;
+} 
+/**barra de menu**/
+.nav_fonts {
+    font-family: 'Brygada 1918', serif; 
+    font-style: italic;
+}
+/**fin del header**/
+
+
+/**main de index.html**/
+#main {
+    width: 100%;
+    background-color: lavender;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+/**seccion de cuadros**/
+#cuadros_section {
+    margin-top: 10px;
+}
+    /*titulo*/
+.cuadros_cero {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.cuadros_title {
+    text-decoration: none;
+    color: rgb(45, 45, 54);
+    font-size: 20px;
+    font-family: 'Brygada 1918', serif;
+    font-style: italic;
+}
+.cuadros_title:hover {
+    animation: cambioTitles 5s ease infinite;
+    color: magenta;
+    transform: skew(10deg, 1deg);
+    transition: all 0.5s;
+}
+@keyframes cambioTitles {
+    0%{color: magenta;}
+    33% {color: violet;}
+    66% {color: pink;}
+}  
+    /*imagenes*/ 
+.cuadros_uno {
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: beige;
+    color: rgba(0, 0, 0, 0.712); 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 20px;
+    width: fit-content;
+}
+.cuadros_dos {
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: beige;
+    color: rgba(0, 0, 0, 0.712); 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 20px; 
+    width: fit-content; 
+}
+.cuadros_tres {
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: beige;
+    color: rgba(0, 0, 0, 0.712); 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 20px;
+    width: fit-content; 
+}
+.cuadros_cuatro {
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: beige;
+    color: rgba(0, 0, 0, 0.712); 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 20px;
+    width: fit-content; 
+}
+.cuadros_img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+    border: 2px dashed rgb(39, 34, 25);
+}
+
+/**seccion de vidrofusion**/
+#vidro_section {
+    margin-top: 10px;
+}
+    /*titulo*/
+.vidro_cero {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.vidro_title {
+    text-decoration: none;
+    color: rgb(45, 45, 54);
+    font-size: 20px;
+    font-family: 'Brygada 1918', serif;
+    font-style: italic;
+}
+.vidro_title:hover {
+    color: magenta;
+    animation: cambioTitles 5s ease infinite;
+    transform: skew(10deg, 1deg);
+    transition: all 0.5s;
+}
+    /*imagenes*/ 
+.vidro_uno {
+    grid-area: uno;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: beige;
+    color: rgba(0, 0, 0, 0.712); 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 20px;
+    width: fit-content;
+}
+.vidro_dos {
+    grid-area: dos;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: beige;
+    color: rgba(0, 0, 0, 0.712); 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 20px; 
+    width: fit-content; 
+}
+.vidro_tres {
+    grid-area: tres;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: beige;
+    color: rgba(0, 0, 0, 0.712); 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 20px;
+    width: fit-content; 
+}
+.vidro_cuatro {
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: beige;
+    color: rgba(0, 0, 0, 0.712); 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 20px;
+    width: fit-content; 
+}
+.vidro_img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+    border: 2px dashed rgb(39, 34, 25);
+}
+
+/**seccion de porcelanas**/
+#porce_section {
+    margin-top: 10px;
+}
+    /*titulo*/
+.porce_cero {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.porce_title {
+    text-decoration: none;
+    color: rgb(45, 45, 54);
+    font-size: 20px;
+    font-family: 'Brygada 1918', serif;
+    font-style: italic;
+}
+.porce_title:hover {
+    color: magenta;
+    animation: cambioTitles 5s ease infinite;
+    transform: skew(10deg, 1deg);
+    transition: all 0.5s;
+}
+    /*imagenes*/ 
+.porce_uno {
+    grid-area: uno;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: beige;
+    color: rgba(0, 0, 0, 0.712); 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 20px;
+    width: fit-content;
+}
+.porce_dos {
+    grid-area: dos;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: beige;
+    color: rgba(0, 0, 0, 0.712); 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 20px; 
+    width: fit-content; 
+}
+.porce_tres {
+    grid-area: tres;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: beige;
+    color: rgba(0, 0, 0, 0.712); 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 20px;
+    width: fit-content; 
+}
+.porce_cuatro {
+    grid-area: cuatro;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: beige;
+    color: rgba(0, 0, 0, 0.712); 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 20px;
+    width: fit-content; 
+}
+.porce_img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+    border: 2px dashed rgb(39, 34, 25);
+}
+
+/**seccion de velas**/
+#velas_section {
+    margin-top: 10px;
+}
+    /*titulo*/
+.velas_cero {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.velas_title {
+    text-decoration: none;
+    color: rgb(45, 45, 54);
+    font-size: 20px;
+    font-family: 'Brygada 1918', serif;
+    font-style: italic;
+}
+.velas_title:hover {
+    color: magenta;
+    animation: cambioTitles 5s ease infinite;
+    transform: skew(10deg, 1deg);
+    transition: all 0.5s;
+}
+    /*imagenes*/ 
+.velas_uno {
+    grid-area: uno;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: beige;
+    color: rgba(0, 0, 0, 0.712); 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 20px;
+    width: fit-content;
+}
+.velas_dos {
+    grid-area: dos;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: beige;
+    color: rgba(0, 0, 0, 0.712); 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 20px; 
+    width: fit-content; 
+}
+.velas_tres {
+    grid-area: tres;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: beige;
+    color: rgba(0, 0, 0, 0.712); 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 20px;
+    width: fit-content; 
+}
+.velas_cuatro {
+    grid-area: cuatro;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: beige;
+    color: rgba(0, 0, 0, 0.712); 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 20px;
+    width: fit-content; 
+}
+.velas_img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+    border: 2px dashed rgb(39, 34, 25);
+}
+
+/*fin del main index.html*/
+
+/**footer**/
+#footer {
+    background-color: rgb(232, 95, 241); 
+    width: 100%; 
+    height: 30vh;
+    padding-top: 10px;
+    border-top: 1px solid black;
+    display: grid;
+    grid-template-areas: "direccion redes contacto";
+    grid-template-columns: repeat(3, 1fr);
+    animation: cambioFooter 10s ease infinite;
+}
+@keyframes cambioFooter {
+    0%{background-color: rgb(232, 95, 241);}
+    20%{background-color: rgb(211, 44, 253);}
+    40%{background-color: rgb(125, 12, 255);}
+    60%{background-color: rgb(211, 44, 253);}
+    80%{background-color: rgb(232, 95, 241);}
+} 
+.footer_direccion {
+    grid-area: direccion;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mapafooter:hover {
+    transform: scale(1.20, 1);
+    transition: all ease 0.3s;
+}
+.direccion_text {
+    text-decoration: none; 
+    color: lavender; 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 15px;
+}
+.footer_redes {
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.redes_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+.redes_img {
+    height: 3vh;
+    width: 3vw;
+    background-color: cyan;
+    border-radius: 60%;
+    border: 1px black solid;
+}
+.redes_text {
+    text-decoration: none; 
+    color: lavender; 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 15px;
+    position: absolute; 
+}
+.redes_text:hover {
+    color: cyan;
+    transform: translate(5px, 5px);
+    transition: all 0.5s;
+}
+.footer_contacto {
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contacto_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+.contacto_img {
+    height: 3vh;
+    width: 3vw;
+    background-color: lime;
+    border-radius: 60%;
+    border: 1px black solid;
+}
+.contacto_text {
+    text-decoration: none; 
+    color: lavender; 
+    font-family: 'Brygada 1918', serif; 
+    font-size: 15px; 
+    position: absolute;
+}
+.contacto_text:hover {
+    color: lime;
+    transform: translate(5px, 5px);
+    transition: all 0.5s;
+}
+/**fin del footer**/
+/**fin del CSS del index.html**/
+
+
+/** CSS de tienda.html**/
+.main_tienda {
+    height: 100vh;
+    display: grid;
+    
+}
+.section_tienda {
+    margin: auto;
+}
+.tienda_title {
+    text-decoration: none;
+    color: rgb(45, 45, 54);
+    font-size: 20px;
+    font-family: 'Brygada 1918', serif;
+    font-style: italic;
+}
+.description {
+    text-decoration: none;
+    color: rgb(45, 45, 54);
+    font-size: 20px;
+    font-family: 'Brygada 1918', serif;
+    font-style: italic;
+}
+/**fin de tienda.html**/
+
+/** contacto.html **/
+.contacto_main {
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    height: 100vh;
+    display: grid;
+}
+.formulario {
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid black;
+    border-radius: 15%;
+    padding: 30px 15px;
+    margin: auto;
+}
+.form_contenedor {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+.form_titulo {
+    text-align: center;
+    font-size: 30px;
+}
+.form_input {
+    font-family: 'Brygada 1918', serif;
+    font-size: 15px;
+    padding: .8em 1em;
+}
+.mensaje {
+    resize: none;
+    padding: 1.8em 1em;
+}
+.form_enviar {
+    font-family: 'Brygada 1918', serif;
+    font-size: 1rem;
+    background-color: cyan;
+    border: none;
+    font-weight: 300;
+    padding: .7em 0; 
+    border-radius: .2em;
+    font-weight: 400;
+}
+@media only screen and (max-width: 450px) {
+    .formulario {
+        padding: 30px 10px;
+    }
+} 
+/**fin contacto.html**/
+
+/*curso.html*/
+.curso_main {
+    height: 100vh;
+    display: grid;
+    background-color: #fad0c4;
+}
+.curso_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    border: solid 1px black;
+    border-radius: 1em;
+    padding: 15px 10px;
+    background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+}
+.texto_curso {
+    font-family: 'Brygada 1918', serif;
+    font-style: italic;
+}
+.curso_div_input {
+    display: grid;
+    border: none;
+}
+.curso_input {
+    background-color: cyan;
+    margin: auto;
+    border: none;
+    border: 1px lavender solid;
+    border-radius: 1em;
+    padding: 10px;
+}
+.curso_input:hover {
+    background-color: #8fd3f4;
+    color: black;
+    transform: scale(1.2);
+    transition: all 1s ease;
+}
+/**bio.html**/
+
+.bio_div_title {
+    grid-area: title;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bio_title {
+    font-family: 'Brygada 1918', serif;
+    font-size: 30px;
+}
+.bio_div_text {
+    grid-area: texto;
+    padding: 10px 16px;
+}
+.bio_text {
+    font-family: 'Brygada 1918', serif;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.712);
+}
+/**fin archivo taller_santiago_abrate**/

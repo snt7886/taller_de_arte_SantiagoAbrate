@@ -1,0 +1,28 @@
+$index-sections: (
+    border-r: 10%,
+    padd: 10px,
+    bg: beige,
+    color: rgba(0, 0, 0, 0.712),
+    font: 'Brygada 1918',
+    font-s: 20px,
+    width: fit-content);
+
+    .container .row div[ class~="col-lg-3"] div[ class] {
+        border-radius: map-get($index-sections, border-r);
+        padding: map-get($index-sections, pad);
+        background-color: map-get($index-sections, bg);
+        color: map-get($index-sections, color);
+        font-family: map-get($index-sections, font);
+        font-size: map-get($index-sections, font-s);
+        width: map-get($index-sections, fit-content);
+    }
+
+$w-h_lg: (
+    w: 100%,
+    h: 20%,
+);
+
+$w-h_sm: (
+    w: 100%,
+    h: 15vh,
+);

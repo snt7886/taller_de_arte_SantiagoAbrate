@@ -1,0 +1,11 @@
+%title-sections {
+    text-decoration: none;
+    color: nth($color, 5);
+    font-size:nth($font-size, 2);
+    font-family: $font-fam;
+    font-style: $font-stl;
+}
+%footer_hover {
+    transform: translate(5px, 5px);
+    transition: all 0.5s;
+}

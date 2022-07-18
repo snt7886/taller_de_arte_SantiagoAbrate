@@ -1,0 +1,60 @@
+@import "../base/listas";
+@import "../base/variables";
+@import "../base/mapas";
+@import "../base/extends";
+@import "../base/mixins";
+.bio_main {
+    height: 100vh;
+    display: grid;
+    animation: cambiobio 10s ease infinite;
+    background-color: #e6e9f0;
+    @keyframes cambiobio {
+        0%{background-color: #e6e9f0;}
+        25%{background-color: #eef1f5;}
+        50%{background-color: #accbee;}
+        75%{background-color: #e7f0fd;}
+    }
+    .bio_container {
+        display: grid;
+        grid-template-areas: "img title"
+        "texto texto";
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+        border: solid 1px black;
+        border-radius: 1em;
+        .bio_div_img {
+            grid-area: img;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 10px 16px;
+            .bio_img {
+                height: 250px;
+                width: 250px;
+                border-radius: 10%;
+                border: solid 1px black;
+            }
+        }
+        .bio_div_title {
+            grid-area: title;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .bio_title {
+                font-family: 'Brygada 1918';
+                font-size: 30px;
+            }
+        }
+        .bio_div_text {
+            grid-area: texto;
+            padding: 10px 16px;
+            .bio_text {
+                font-family: 'Brygada 1918';
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.712);
+            }
+        }
+    } 
+}

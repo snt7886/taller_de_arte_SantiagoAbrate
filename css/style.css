@@ -1,0 +1,765 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /**body**/
+  margin: 0;
+  padding: 0;
+  font-family: "Brygada 1918", serif;
+  width: 100%;
+}
+
+#main {
+  /**main de index.html**/
+  width: 100%;
+  background-color: lavender;
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+
+/*Components*/
+/*generales*/
+/*header*/
+/*footer*/
+/*variables generales*/
+/*vatiables del footer*/
+#velas_section .container .row .cero .velas_cero .velas_title, #porce_section .container .row .cero .porce_cero .porce_title, #vidro_section .container .row .cero .vidro_cero .vidro_title, #cuadros_section .container .row .cero .cuadros_cero .cuadros_title {
+  text-decoration: none;
+  color: rgb(45, 45, 54);
+  font-size: 20px;
+  font-family: "Brygada 1918";
+  font-style: italic;
+}
+
+#footer .footer_contacto .contacto_list .contacto_text:hover, #footer .footer_redes .redes_list .redes_text:hover {
+  transform: translate(5px, 5px);
+  transition: all 0.5s;
+}
+
+.container .row div[class~=col-lg-3] div[class] {
+  border-radius: 10%;
+  background-color: beige;
+  color: rgba(0, 0, 0, 0.712);
+  font-family: "Brygada 1918";
+  font-size: 20px;
+}
+
+/**header**/
+#header {
+  width: 100%;
+  background: rgb(106, 0, 252);
+  height: 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  animation: cambioHeader 10s ease infinite;
+}
+@keyframes cambioHeader {
+  0% {
+    background-color: rgb(106, 0, 252);
+  }
+  20% {
+    background-color: rgb(255, 14, 147);
+  }
+  40% {
+    background-color: rgb(255, 161, 12);
+  }
+  60% {
+    background-color: rgb(255, 67, 96);
+  }
+  80% {
+    background-color: rgb(255, 5, 157);
+  }
+}
+@media only screen and (max-width: 480px) {
+  #header {
+    width: 100%;
+    height: 15vh;
+    position: sticky;
+    top: 0;
+    grid-template-areas: "title title title title" "buttons buttons buttons buttons" "nav nav nav nav";
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+#header .navbar .nav_fonts {
+  /**barra de menu**/
+  font-family: "Brygada 1918";
+  font-style: italic;
+}
+#header .navbar .container-fluid .navbar-brand .animate__animated {
+  /**encabezado**/
+  text-decoration: none;
+  color: lavender;
+  font-family: "Brygada 1918";
+  font-style: italic;
+  font-size: 20px;
+}
+
+/**fin del header**/
+/*generales*/
+/*header*/
+/*footer*/
+/*variables generales*/
+/*vatiables del footer*/
+.container .row div[class~=col-lg-3] div[class] {
+  border-radius: 10%;
+  background-color: beige;
+  color: rgba(0, 0, 0, 0.712);
+  font-family: "Brygada 1918";
+  font-size: 20px;
+}
+
+#velas_section .container .row .cero .velas_cero .velas_title, #porce_section .container .row .cero .porce_cero .porce_title, #vidro_section .container .row .cero .vidro_cero .vidro_title, #cuadros_section .container .row .cero .cuadros_cero .cuadros_title {
+  text-decoration: none;
+  color: rgb(45, 45, 54);
+  font-size: 20px;
+  font-family: "Brygada 1918";
+  font-style: italic;
+}
+
+#footer .footer_contacto .contacto_list .contacto_text:hover, #footer .footer_redes .redes_list .redes_text:hover {
+  transform: translate(5px, 5px);
+  transition: all 0.5s;
+}
+
+/*seccion de cuadros del index*/
+#cuadros_section {
+  margin-top: 10px;
+}
+#cuadros_section .container .row .cero .cuadros_cero {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+#cuadros_section .container .row .cero .cuadros_cero .cuadros_title:hover {
+  animation: cambioTitles 5s ease infinite;
+  color: magenta;
+  transform: skew(10deg, 1deg);
+  transition: all 0.5s;
+}
+@keyframes cambioTitles {
+  0% {
+    color: magenta;
+  }
+  33% {
+    color: violet;
+  }
+  66% {
+    color: pink;
+  }
+}
+#cuadros_section .container .row div[class~=col-lg-3] div[class] {
+  border: 1px solid black;
+}
+#cuadros_section .container .row div[class~=col-lg-3] div[class] .cuadros_img {
+  height: 200px;
+  width: 200px;
+  border-radius: 10%;
+  border: 2px dashed rgb(39, 34, 25);
+}
+
+/*generales*/
+/*header*/
+/*footer*/
+/*variables generales*/
+/*vatiables del footer*/
+.container .row div[class~=col-lg-3] div[class] {
+  border-radius: 10%;
+  background-color: beige;
+  color: rgba(0, 0, 0, 0.712);
+  font-family: "Brygada 1918";
+  font-size: 20px;
+}
+
+#velas_section .container .row .cero .velas_cero .velas_title, #porce_section .container .row .cero .porce_cero .porce_title, #vidro_section .container .row .cero .vidro_cero .vidro_title, #cuadros_section .container .row .cero .cuadros_cero .cuadros_title {
+  text-decoration: none;
+  color: rgb(45, 45, 54);
+  font-size: 20px;
+  font-family: "Brygada 1918";
+  font-style: italic;
+}
+
+#footer .footer_contacto .contacto_list .contacto_text:hover, #footer .footer_redes .redes_list .redes_text:hover {
+  transform: translate(5px, 5px);
+  transition: all 0.5s;
+}
+
+/**seccion de vidrofusion**/
+#vidro_section {
+  margin-top: 10px;
+}
+#vidro_section .container .row .cero .vidro_cero {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+#vidro_section .container .row .cero .vidro_cero .vidro_title:hover {
+  animation: cambioTitles 5s ease infinite;
+  color: magenta;
+  transform: skew(10deg, 1deg);
+  transition: all 0.5s;
+}
+@keyframes cambioTitles {
+  0% {
+    color: magenta;
+  }
+  33% {
+    color: violet;
+  }
+  66% {
+    color: pink;
+  }
+}
+#vidro_section .container .row div[class~=col-lg-3] div[class] {
+  border: 1px solid black;
+}
+#vidro_section .container .row div[class~=col-lg-3] div[class] .vidro_img {
+  height: 200px;
+  width: 200px;
+  border-radius: 10%;
+  border: 2px dashed rgb(39, 34, 25);
+}
+
+/*generales*/
+/*header*/
+/*footer*/
+/*variables generales*/
+/*vatiables del footer*/
+.container .row div[class~=col-lg-3] div[class] {
+  border-radius: 10%;
+  background-color: beige;
+  color: rgba(0, 0, 0, 0.712);
+  font-family: "Brygada 1918";
+  font-size: 20px;
+}
+
+#velas_section .container .row .cero .velas_cero .velas_title, #porce_section .container .row .cero .porce_cero .porce_title, #cuadros_section .container .row .cero .cuadros_cero .cuadros_title, #vidro_section .container .row .cero .vidro_cero .vidro_title {
+  text-decoration: none;
+  color: rgb(45, 45, 54);
+  font-size: 20px;
+  font-family: "Brygada 1918";
+  font-style: italic;
+}
+
+#footer .footer_contacto .contacto_list .contacto_text:hover, #footer .footer_redes .redes_list .redes_text:hover {
+  transform: translate(5px, 5px);
+  transition: all 0.5s;
+}
+
+/**seccion de porcelanas**/
+#porce_section {
+  margin-top: 10px;
+}
+#porce_section .container .row .cero .porce_cero {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+#porce_section .container .row .cero .porce_cero .porce_title:hover {
+  animation: cambioTitles 5s ease infinite;
+  color: magenta;
+  transform: skew(10deg, 1deg);
+  transition: all 0.5s;
+}
+@keyframes cambioTitles {
+  0% {
+    color: magenta;
+  }
+  33% {
+    color: violet;
+  }
+  66% {
+    color: pink;
+  }
+}
+#porce_section .container .row div[class~=col-lg-3] div[class] {
+  border: 1px solid black;
+}
+#porce_section .container .row div[class~=col-lg-3] div[class] .porce_img {
+  height: 200px;
+  width: 200px;
+  border-radius: 10%;
+  border: 2px dashed rgb(39, 34, 25);
+}
+
+/*generales*/
+/*header*/
+/*footer*/
+/*variables generales*/
+/*vatiables del footer*/
+.container .row div[class~=col-lg-3] div[class] {
+  border-radius: 10%;
+  background-color: beige;
+  color: rgba(0, 0, 0, 0.712);
+  font-family: "Brygada 1918";
+  font-size: 20px;
+}
+
+#velas_section .container .row .cero .velas_cero .velas_title, #cuadros_section .container .row .cero .cuadros_cero .cuadros_title, #vidro_section .container .row .cero .vidro_cero .vidro_title, #porce_section .container .row .cero .porce_cero .porce_title {
+  text-decoration: none;
+  color: rgb(45, 45, 54);
+  font-size: 20px;
+  font-family: "Brygada 1918";
+  font-style: italic;
+}
+
+#footer .footer_contacto .contacto_list .contacto_text:hover, #footer .footer_redes .redes_list .redes_text:hover {
+  transform: translate(5px, 5px);
+  transition: all 0.5s;
+}
+
+/**seccion de velas**/
+#velas_section {
+  margin-top: 10px;
+}
+#velas_section .container .row .cero .velas_cero {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+#velas_section .container .row .cero .velas_cero .velas_title:hover {
+  animation: cambioTitles 5s ease infinite;
+  color: magenta;
+  transform: skew(10deg, 1deg);
+  transition: all 0.5s;
+}
+@keyframes cambioTitles {
+  0% {
+    color: magenta;
+  }
+  33% {
+    color: violet;
+  }
+  66% {
+    color: pink;
+  }
+}
+#velas_section .container .row div[class~=col-lg-3] div[class] {
+  border: 1px solid black;
+}
+#velas_section .container .row div[class~=col-lg-3] div[class] .velas_img {
+  height: 200px;
+  width: 200px;
+  border-radius: 10%;
+  border: 2px dashed rgb(39, 34, 25);
+}
+
+/*generales*/
+/*header*/
+/*footer*/
+/*variables generales*/
+/*vatiables del footer*/
+.container .row div[class~=col-lg-3] div[class] {
+  border-radius: 10%;
+  background-color: beige;
+  color: rgba(0, 0, 0, 0.712);
+  font-family: "Brygada 1918";
+  font-size: 20px;
+}
+
+#cuadros_section .container .row .cero .cuadros_cero .cuadros_title, #vidro_section .container .row .cero .vidro_cero .vidro_title, #porce_section .container .row .cero .porce_cero .porce_title, #velas_section .container .row .cero .velas_cero .velas_title {
+  text-decoration: none;
+  color: rgb(45, 45, 54);
+  font-size: 20px;
+  font-family: "Brygada 1918";
+  font-style: italic;
+}
+
+#footer .footer_contacto .contacto_list .contacto_text:hover, #footer .footer_redes .redes_list .redes_text:hover {
+  transform: translate(5px, 5px);
+  transition: all 0.5s;
+}
+
+/**footer**/
+#footer {
+  background-color: rgb(232, 95, 241);
+  width: 100%;
+  height: 30vh;
+  padding-top: 10px;
+  border-top: 1px solid black;
+  display: grid;
+  grid-template-areas: "direccion redes contacto";
+  grid-template-columns: repeat(3, 1fr);
+  animation: cambioFooter 10s ease infinite;
+}
+@keyframes cambioFooter {
+  0% {
+    background-color: rgb(232, 95, 241);
+  }
+  20% {
+    background-color: rgb(211, 44, 253);
+  }
+  40% {
+    background-color: rgb(125, 12, 255);
+  }
+  60% {
+    background-color: rgb(211, 44, 253);
+  }
+  80% {
+    background-color: rgb(232, 95, 241);
+  }
+}
+#footer .footer_direccion {
+  grid-area: direccion;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer .footer_direccion .mapafooter:hover {
+  transform: scale(1.2, 1);
+  transition: all ease 0.3s;
+}
+#footer .footer_direccion .direccion_text {
+  text-decoration: none;
+  color: lavender;
+  font-family: "Brygada 1918";
+  font-size: 15px;
+}
+#footer .footer_redes {
+  grid-area: redes;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#footer .footer_redes .redes_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+#footer .footer_redes .redes_list .redes_img {
+  height: 3vh;
+  width: 3vw;
+  background-color: cyan;
+  border-radius: 60%;
+  border: 1px solid black;
+}
+#footer .footer_redes .redes_list .redes_text {
+  text-decoration: none;
+  color: lavender;
+  font-family: "Brygada 1918";
+  font-size: 15px;
+  position: absolute;
+}
+#footer .footer_redes .redes_list .redes_text:hover {
+  color: cyan;
+}
+#footer .footer_contacto {
+  grid-area: contacto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#footer .footer_contacto .contacto_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+#footer .footer_contacto .contacto_list .contacto_img {
+  height: 3vh;
+  width: 3vw;
+  background-color: lime;
+  border-radius: 60%;
+  border: 1px solid black;
+}
+#footer .footer_contacto .contacto_list .contacto_text {
+  text-decoration: none;
+  color: lavender;
+  font-family: "Brygada 1918";
+  font-size: 15px;
+  position: absolute;
+}
+#footer .footer_contacto .contacto_list .contacto_text:hover {
+  color: lime;
+}
+
+/*generales*/
+/*header*/
+/*footer*/
+/*variables generales*/
+/*vatiables del footer*/
+.container .row div[class~=col-lg-3] div[class] {
+  border-radius: 10%;
+  background-color: beige;
+  color: rgba(0, 0, 0, 0.712);
+  font-family: "Brygada 1918";
+  font-size: 20px;
+}
+
+#cuadros_section .container .row .cero .cuadros_cero .cuadros_title, #vidro_section .container .row .cero .vidro_cero .vidro_title, #porce_section .container .row .cero .porce_cero .porce_title, #velas_section .container .row .cero .velas_cero .velas_title {
+  text-decoration: none;
+  color: rgb(45, 45, 54);
+  font-size: 20px;
+  font-family: "Brygada 1918";
+  font-style: italic;
+}
+
+#footer .footer_redes .redes_list .redes_text:hover, #footer .footer_contacto .contacto_list .contacto_text:hover {
+  transform: translate(5px, 5px);
+  transition: all 0.5s;
+}
+
+.bio_main {
+  height: 100vh;
+  display: grid;
+  animation: cambiobio 10s ease infinite;
+  background-color: #e6e9f0;
+}
+@keyframes cambiobio {
+  0% {
+    background-color: #e6e9f0;
+  }
+  25% {
+    background-color: #eef1f5;
+  }
+  50% {
+    background-color: #accbee;
+  }
+  75% {
+    background-color: #e7f0fd;
+  }
+}
+.bio_main .bio_container {
+  display: grid;
+  grid-template-areas: "img title" "texto texto";
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  border: solid 1px black;
+  border-radius: 1em;
+}
+.bio_main .bio_container .bio_div_img {
+  grid-area: img;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px 16px;
+}
+.bio_main .bio_container .bio_div_img .bio_img {
+  height: 250px;
+  width: 250px;
+  border-radius: 10%;
+  border: solid 1px black;
+}
+.bio_main .bio_container .bio_div_title {
+  grid-area: title;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.bio_main .bio_container .bio_div_title .bio_title {
+  font-family: "Brygada 1918";
+  font-size: 30px;
+}
+.bio_main .bio_container .bio_div_text {
+  grid-area: texto;
+  padding: 10px 16px;
+}
+.bio_main .bio_container .bio_div_text .bio_text {
+  font-family: "Brygada 1918";
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.712);
+}
+
+/*generales*/
+/*header*/
+/*footer*/
+/*variables generales*/
+/*vatiables del footer*/
+.container .row div[class~=col-lg-3] div[class] {
+  border-radius: 10%;
+  background-color: beige;
+  color: rgba(0, 0, 0, 0.712);
+  font-family: "Brygada 1918";
+  font-size: 20px;
+}
+
+#cuadros_section .container .row .cero .cuadros_cero .cuadros_title, #vidro_section .container .row .cero .vidro_cero .vidro_title, #porce_section .container .row .cero .porce_cero .porce_title, #velas_section .container .row .cero .velas_cero .velas_title {
+  text-decoration: none;
+  color: rgb(45, 45, 54);
+  font-size: 20px;
+  font-family: "Brygada 1918";
+  font-style: italic;
+}
+
+#footer .footer_redes .redes_list .redes_text:hover, #footer .footer_contacto .contacto_list .contacto_text:hover {
+  transform: translate(5px, 5px);
+  transition: all 0.5s;
+}
+
+.main_tienda {
+  height: 100vh;
+  display: grid;
+}
+
+.section_tienda {
+  margin: auto;
+}
+
+.tienda_title {
+  text-decoration: none;
+  color: rgb(45, 45, 54);
+  font-size: 20px;
+  font-family: "Brygada 1918";
+  font-style: italic;
+}
+
+.description {
+  text-decoration: none;
+  color: rgb(45, 45, 54);
+  font-size: 20px;
+  font-family: "Brygada 1918";
+  font-style: italic;
+}
+
+/*generales*/
+/*header*/
+/*footer*/
+/*variables generales*/
+/*vatiables del footer*/
+.container .row div[class~=col-lg-3] div[class] {
+  border-radius: 10%;
+  background-color: beige;
+  color: rgba(0, 0, 0, 0.712);
+  font-family: "Brygada 1918";
+  font-size: 20px;
+}
+
+#cuadros_section .container .row .cero .cuadros_cero .cuadros_title, #vidro_section .container .row .cero .vidro_cero .vidro_title, #porce_section .container .row .cero .porce_cero .porce_title, #velas_section .container .row .cero .velas_cero .velas_title {
+  text-decoration: none;
+  color: rgb(45, 45, 54);
+  font-size: 20px;
+  font-family: "Brygada 1918";
+  font-style: italic;
+}
+
+#footer .footer_redes .redes_list .redes_text:hover, #footer .footer_contacto .contacto_list .contacto_text:hover {
+  transform: translate(5px, 5px);
+  transition: all 0.5s;
+}
+
+.contacto_main {
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+  height: 100vh;
+  display: grid;
+}
+.contacto_main .formulario {
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  width: 90%;
+  max-width: 400px;
+  border: 2px solid black;
+  border-radius: 15%;
+  padding: 30px 15px;
+  margin: auto;
+}
+@media only screen and (max-width: 450px) {
+  .contacto_main .formulario {
+    padding: 30px 10px;
+  }
+}
+.contacto_main .formulario .form_contenedor {
+  width: 100%;
+  display: grid;
+  gap: 1em;
+  grid-auto-columns: 100%;
+}
+.contacto_main .formulario .form_titulo {
+  text-align: center;
+  font-size: 30px;
+}
+.contacto_main .formulario .form_input {
+  font-family: "Brygada 1918";
+  font-size: 15px;
+  padding: 0.8em 1em;
+}
+.contacto_main .formulario .mensaje {
+  resize: none;
+  padding: 1.8em 1em;
+}
+.contacto_main .formulario .form_enviar {
+  font-family: "Brygada 1918";
+  font-size: 1rem;
+  background-color: cyan;
+  border: none;
+  font-weight: 300;
+  padding: 0.7em 0;
+  border-radius: 0.2em;
+  font-weight: 400;
+}
+
+.curso_main {
+  height: 100vh;
+  display: grid;
+  background-color: #fad0c4;
+}
+.curso_main .curso_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  border: solid 1px black;
+  border-radius: 1em;
+  padding: 15px 10px;
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+}
+.curso_main .curso_container .texto_curso {
+  font-family: "Brygada 1918";
+  font-style: italic;
+}
+.curso_main .curso_container .curso_div_input {
+  display: grid;
+  border: none;
+}
+.curso_main .curso_container .curso_div_input .curso_input {
+  background-color: cyan;
+  margin: auto;
+  border: none;
+  border: 1px lavender solid;
+  border-radius: 1em;
+  padding: 10px;
+}
+.curso_main .curso_container .curso_div_input .curso_input:hover {
+  background-color: #8fd3f4;
+  color: black;
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+
+/*Base*/
+/*generales*/
+/*header*/
+/*footer*/
+/*variables generales*/
+/*vatiables del footer*/
+.container .row div[class~=col-lg-3] div[class] {
+  border-radius: 10%;
+  background-color: beige;
+  color: rgba(0, 0, 0, 0.712);
+  font-family: "Brygada 1918";
+  font-size: 20px;
+}
+
+#cuadros_section .container .row .cero .cuadros_cero .cuadros_title, #vidro_section .container .row .cero .vidro_cero .vidro_title, #porce_section .container .row .cero .porce_cero .porce_title, #velas_section .container .row .cero .velas_cero .velas_title {
+  text-decoration: none;
+  color: rgb(45, 45, 54);
+  font-size: 20px;
+  font-family: "Brygada 1918";
+  font-style: italic;
+}
+
+#footer .footer_redes .redes_list .redes_text:hover, #footer .footer_contacto .contacto_list .contacto_text:hover {
+  transform: translate(5px, 5px);
+  transition: all 0.5s;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+@import "../base/listas";
+@import "../base/variables";
+@import "../base/mapas";
+@import "../base/extends";
+@import "../base/mixins";
+.main_tienda {
+    height: 100vh;
+    display: grid;
+    
+}
+.section_tienda {
+    margin: auto;
+}
+.tienda_title {
+    text-decoration: none;
+    color: rgb(45, 45, 54);
+    font-size: 20px;
+    font-family: 'Brygada 1918';
+    font-style: italic;
+}
+.description {
+    text-decoration: none;
+    color: rgb(45, 45, 54);
+    font-size: 20px;
+    font-family: 'Brygada 1918';
+    font-style: italic;
+}
